@@ -15,6 +15,8 @@ fun usandoIf(num: Int) {
      *      faça isso
      * } senão se (outraCondição) {
      *      faça isso
+     * } senão {
+     *      faça isso
      * }
      */
     if ((num % 2) == 0) {
@@ -73,3 +75,13 @@ fun usandoWhen3(num: Int){
         else -> println("O número $num não é divisível por 2 nem por 3")
     }
 }
+
+/**
+ * exercicio de fixação
+ * Faça um programa que leia 3 numeros inteiros do usuário e exiba
+ * qual deles é par ou impar
+ * Exemplo de impressão
+ * O número 1 é par, o 2 é impar e o 3 é par.
+ */
+
+
