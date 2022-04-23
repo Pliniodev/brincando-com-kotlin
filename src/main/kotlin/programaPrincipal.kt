@@ -1,3 +1,3 @@
 fun main(){
-    usandoEstruturasCondicionais()
+    usandoWhile()
 }
