@@ -1,5 +1,9 @@
 fun usandoEstruturasCondicionais() {
     val num = imprimeEnunciadoCondicionais()
+
+    usandoIf(num)
+    usandoWhen(num)
+    usandoWhen2(num)
     usandoWhen3(num)
 }
 
@@ -9,6 +13,7 @@ fun imprimeEnunciadoCondicionais(): Int {
 }
 
 fun usandoIf(num: Int) {
+    println("Função: usandoIf")
     /**
      * Sintaxe
      * se(condição) {
@@ -19,6 +24,7 @@ fun usandoIf(num: Int) {
      *      faça isso
      * }
      */
+
     if ((num % 2) == 0) {
         println("O número $num é divisível por 2")
     }else if ((num % 3) == 0){
@@ -29,6 +35,7 @@ fun usandoIf(num: Int) {
 }
 
 fun usandoWhen(num: Int) {
+    println("\nFunção: usandoWhen")
     /**
      * Sintaxe
      * quando {
@@ -46,6 +53,7 @@ fun usandoWhen(num: Int) {
 }
 
 fun usandoWhen2(num: Int){
+    println("\nFunção: usandoWhen2")
     /**
      * quando(valor) {
      *      forEsseValor -> faça isso
@@ -61,17 +69,21 @@ fun usandoWhen2(num: Int){
 }
 
 fun usandoWhen3(num: Int){
+    println("\nFunção: usandoWhen3")
+
+    //atribui um valor a variável valor
     val valor = when {
-        (num % 2) == 0 && (num % 3) == 0 -> "por2ePor3"
-        (num % 2) == 0 -> "por2"
-        (num % 3) == 0 -> "por3"
-        else -> "nemPor2NemPor3"
+        (num % 2) == 0 && (num % 3) == 0 -> 1
+        (num % 2) == 0 -> 2
+        (num % 3) == 0 -> 3
+        else -> 4
     }
 
+    //verifica se o valor é algum dos 3 abaixo
     when(valor){
-        "por2ePor3" -> println("O número $num é divisível por 2 e por 3")
-        "por2" -> println("O número $num é divisível por 2")
-        "por3" -> println("O número $num é divisível por 3")
+        1 -> println("O número $num é divisível por 2 e por 3")
+        2 -> println("O número $num é divisível por 2")
+        3 -> println("O número $num é divisível por 3")
         else -> println("O número $num não é divisível por 2 nem por 3")
     }
 }
@@ -83,5 +95,4 @@ fun usandoWhen3(num: Int){
  * Exemplo de impressão
  * O número 1 é par, o 2 é impar e o 3 é par.
  */
-
 
