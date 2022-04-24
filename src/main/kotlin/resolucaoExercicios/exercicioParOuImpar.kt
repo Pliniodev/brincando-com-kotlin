@@ -1,3 +1,5 @@
+package resolucaoExercicios
+
 fun main(){
     val entrada1 = inserindoNumeros("primeiro")
     val entrada2 = inserindoNumeros("segundo")
