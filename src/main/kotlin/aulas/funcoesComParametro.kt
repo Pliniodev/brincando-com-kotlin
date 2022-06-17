@@ -30,3 +30,33 @@ fun restoDaDivisao(num1: Int, num2: Int): Int {
 
 //Exercicio da pretinha
 //Fazer um programa que faça a operação da seguinte equação (A+B+C-D)*E
+//
+//fun main() {
+//    // pra primeira frase
+//    criaPrimeiraParte("O fulano")
+//    criaSegundaParte("é legal")
+//
+//    //
+//    println()
+//    // pra segunda frase
+//    criaPrimeiraParte("A Suellen")
+//    criaSegundaParte("é gostosa")
+//
+//    //
+//    println()
+//    // pra terceira frase
+//    criaPrimeiraParte("O Plínio")
+//    criaSegundaParte("é bobão")
+//}
+
+// O fulano // é legal
+// A Suellen // é gostosa
+// O Plínio // é bobão
+
+fun criaPrimeiraParte(primeiraParte:String){
+    print("$primeiraParte ")
+}
+
+fun criaSegundaParte(segundaParte:String){
+    print(segundaParte)
+}
