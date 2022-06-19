@@ -62,9 +62,9 @@ fun usandoIf(num: Int) {
     //se um numero(Num) / 2 tiver o resto 0 faça algo
     if ((num % 2) == 0) {
         println("O número $num é divisível por 2")
-    }else if ((num % 3) == 0){
+    } else if ((num % 3) == 0) {
         println("O número $num é divisível por três")
-    }else {
+    } else {
         println("não é divisível nem por 2 nem por 3")
     }
 }
