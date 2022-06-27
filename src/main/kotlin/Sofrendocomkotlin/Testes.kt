@@ -1,7 +1,8 @@
 package Sofrendocomkotlin
 
+
 fun main() {
-    println(birthdayGreeting("Rover", 5))
+    println(numeroPar())
     println(birthdayGreeting("Alex", 2))
     birthdayGreeting2("Fulano", 20)
     println(birthdayGreeting3("Fulano", 20))
@@ -213,9 +214,13 @@ fun porcentagem() {
 
 /**Um número digitado pelo usuário é par. */
 
-fun numeroPar(numero: String): Int {
-    println("Digite um $numero e aperte enter")
-    return readln().toInt()
+fun numeroPar(): String {
+    println("Digite um número e aperte enter")
+    val numero = readln().toInt()
+    if ((numero % 2) == 0) return "O $numero é par"
+        else
+        return "O número $numero é impar"
+    }
 
-}
+
 
