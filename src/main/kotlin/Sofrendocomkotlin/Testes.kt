@@ -2,18 +2,19 @@ package Sofrendocomkotlin
 
 
 fun main() {
-    println(numeroPar())
-    println(birthdayGreeting("Alex", 2))
-    birthdayGreeting2("Fulano", 20)
-    println(birthdayGreeting3("Fulano", 20))
-    println(birthdayGreeting4("Fulano4", 34))
-    escreveAFrase("carro")
-    println()
-    escreveAFrase("lapis")
+//    println(numeroPar())
+//    println(birthdayGreeting("Alex", 2))
+//    birthdayGreeting2("Fulano", 20)
+//    println(birthdayGreeting3("Fulano", 20))
+//    println(birthdayGreeting4("Fulano4", 34))
+//    escreveAFrase("carro")
+//    println()
+//    escreveAFrase("lapis")
+    println(escrevaONome("Lucas"))
 }
 
 fun escreveAFrase(objeto: String) {
-    if (objeto == "lapis"){
+    if (objeto == "lapis") {
         println("Esse é meu texto")
     } else {
         println("Você não me deu o lápis")
@@ -218,9 +219,58 @@ fun numeroPar(): String {
     println("Digite um número e aperte enter")
     val numero = readln().toInt()
     if ((numero % 2) == 0) return "O $numero é par"
-        else
-        return "O número $numero é impar"
+    else return "O número $numero é impar"
+}
+
+/**
+ * WHEN
+ */
+
+fun numeroPar2() {
+    val numero = 4
+    val resultado =
+        if ((numero % 2) == 0) {
+            "O $numero é par"
+        } else {
+            "O número $numero é impar"
+        }
+    println(resultado)
+}
+
+fun numeroParComWhen() {
+    /**
+     * quando {
+     *      umaCondiçãoTrueOrFalse -> faça isso
+     *      outraCondição -> faça isso
+     * }
+     */
+
+    val numero = 4
+    val resultado =
+        when {
+            (numero % 6) == 0 -> "O $numero é par"
+            (numero % 2) == 0 -> "O $numero é par"
+            (numero % 3) == 0 -> "O $numero é par"
+            (numero % 5) == 0 -> "O $numero é par"
+            else -> "O número $numero é impar"
+        }
+    println(resultado)
+}
+
+//Se a frase tiver tal nome exiba esse nome
+fun escrevaONome(nome: String): String{
+    val a = 1
+    val frase = when {
+        nome == "Paulo" -> "O Paulo é legal"
+        nome == "João" -> "O João é chato"
+        nome == "Pedro" -> "O Pedro é doido"
+        a != 1 -> "O Pedro é doido"
+        a + 1 - 2 == 1 -> "O Pedro é doido"
+        else -> "Ninguém da turma foi chamado"
     }
+    return frase
+}
+
 
 
 
